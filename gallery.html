@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Bakery</title>
+    <script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="popper.js"></script>
+	<script type="text/javascript" src="bootstrap.js"></script>	
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+<style>
+    
+	*{
+	margin: 0px;
+	padding: 0px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+	footer{
+	width: 100%;
+	height: 60px;
+	
+	color: white;
+	display: flex;
+	justify-content:space-around;
+	margin: auto;
+	margin-top: 100px;
+}
+
+footer h4{
+	text-align: center;
+	font-size: 20px;
+	padding-top: 17px;
+}
+#gallary{
+    margin-top: 50px;
+}
+#gallary h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: rgba(161,109,14,1);
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid rgba(161,109,14,1);
+}
+#gallary h3{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: rgba(161,109,14,1);
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid rgba(161,109,14,1);
+}
+#gallary .card{
+    box-shadow: 3px 3px 3px black;
+    cursor: pointer;
+}
+#gallary .overlay{
+    opacity: 0;
+    width: 100%;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+#gallary .card:hover .overlay{
+    opacity: 5;
+    margin-top: 20%;
+    transition: 0.5s ease;
+}
+
+</style>
+</head>
+<body>
+    <header>
+		<div class="container">
+			<div class="row">
+				<div class="col-5 col-sm-5 col-md-6 col-lg-6 col-xl-6">
+					<img src="img/cake-removebg-preview.png" class="img-fluid mx-auto" height="70" width="170">
+				</div>
+
+				<div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6">
+					<form class="form-inline" style="margin-top: 70px; margin-left: 60px;">
+						<div class="input-group">
+							<input class="form-control mr-sm-2" type="text" placeholder="Search....">
+							<button class="btn btn-success" type="submit">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+		<div class="container-fluid">
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+	    		<span class="navbar-toggler-icon"></span>
+	  		</button>
+	  		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item"><a class="nav-link"  href="index.html" style="width: 130px; text-align: center;">HOME</a></li>
+					<li class="nav-item"><a class="nav-link"  href="birthday.html" style="width: 160px; text-align: center;">BIRTHDAY</a></li>
+					<li class="nav-item"><a class="nav-link"  href="cake.html" style="width: 160px; text-align: center;">CAKES</a></li>
+					<li class="nav-item"><a class="nav-link"  href="chocalate.html" style="width: 130px; text-align: center;">CHOCALATE</a></li>
+                    <li class="nav-item active" style="border-bottom: 3px solid #77b300; font-size: 17px;"><a class="nav-link"  href="gallery.html" style="width: 110px; text-align: center;">GALLARY</a></li>
+					
+					<li class="nav-item"><a class="nav-link"  href="cantact.html" style="width: 110px; text-align: center;">CONTACT</a></li>
+				</ul>
+			</div>	
+		</div>
+	</nav>
+    
+
+    <div id="accordion">
+        <div class="card">
+              <div class="card-header bg-dark">
+                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                 <h4 id="Pranayama">1. <u>CHOCALATE CAKE</u></h4></a>
+              </div>
+              <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <img id="img" src="img/c4.png" class="img-thumbnail img-fluid" height="200" width="580">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <p style="font-size: 18px; line-height: 27px; text-align:justify;"><b>-</b> The main ingredient of the chocolate in this cake is coco which helps our brain release endorphins or the “feel good” chemical. This is why whenever we eat this cake, our moods lighten and we feel a lot better. The darker or more bitter is the chocolate used in the cake, the better your mood will be. <br><br>
+
+                            <b>-</b>58% of respondents named chocolate as their favorite cake flavor of the options listed. Vanilla came in second place, followed by strawberry, red velvet and raspberry. Lemon and funfetti were sixth and seventh on the list, in terms of popularity.
+                            </p>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+          </div>
+    </div>
+
+    <div id="accordion">
+        <div class="card">
+              <div class="card-header bg-dark">
+                <a class="card-link" data-toggle="collapse" href="#collapsetwo">
+                 <h4 id="Vrikshasana">2. <u>BIRTHDAY CAKE</u></h4></a>
+              </div>
+              <div id="collapsetwo" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <img id="img" src="img/c1.png" class="img-thumbnail img-fluid" height="200" width="530">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <p style="font-size: 18px; line-height: 27px; text-align:justify;">
+                            <p style="font-size: 18px; line-height: 27px; text-align:justify;"><b>-</b> A birthday cake is a cake eaten as part of a birthday celebration. While there is no standard for birthday cakes, they are typically highly decorated layer cakes covered in frosting, often featuring birthday wishes ("Happy birthdays") and the celebrant's name. In many cultures,<br><br>
+
+                            <b>-</b> it is also customary to serve the birthday cake with small lit candles on top, especially in the case of a child's birthday. The cake often accompanies the singing of "Happy Birthday to You". Variations include cupcakes, cake pops, pastries, and tarts.<br><br>
+
+                            <b>-</b> The cake is usually presented with all the candles lit, at which point it is customary for the guests to sing Happy Birthday to You in unison, or an equivalent birthday song appropriate to the country.
+                            </p>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+          </div>
+    </div>
+    
+    <div id="accordion">
+        <div class="card">
+              <div class="card-header bg-dark">
+                <a class="card-link" data-toggle="collapse" href="#collapsethree"><h4 id="DhyanaVirasana">3. <u>PESTRY</u></h4></a>
+              </div>
+              <div id="collapsethree" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <img id="img" src="img/c3.png" class="img-thumbnail img-fluid" height="200" width="530">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <p style="font-size: 18px; line-height: 27px; text-align:justify;"><b>-</b> Pastry refers to a variety of doughs (often enriched with fat or eggs), as well as the sweet and savoury baked goods made from them.[1][2][3] These goods are often called pastries as a synecdoche, and the dough may be accordingly called pastry dough for clarity. <br><br>
+                            <b>-</b> Pastry chefs are also responsible for creating new recipes to put on the menu, and they work in restaurants, bistros, large hotels, casinos and bakeries. Pastry baking is usually done in an area slightly separate from the main kitchen. <br><br>
+                            </p>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+          </div>
+    </div>
+    
+
+    <div id="accordion">
+        <div class="card">
+              <div class="card-header bg-dark">
+                <a class="card-link" data-toggle="collapse" href="#collapsesix">
+                 <h4 id="FullBody">6. <u>Birthday Status</u></h4></a>
+              </div>
+              <div id="collapsesix" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <video  controls="" width="470" height="290">
+                                <source src="img/bday_video.webm" type="video/mp4"/>
+                            </video>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <p style="font-size: 18px; line-height: 27px; text-align:justify;"><b>-</b> “Wishing you a day filled with happiness and a year filled with joy. Happy birthday!” “Sending you smiles for every moment of your special day…Have a wonderful time and a very happy birthday!” “Hope your special day brings you all that your heart desires!<br><br>
+
+                            <b>-</b> "Here's to a year of growth, joy, and amazing moments, Happy Birthday!”
+                            </p>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+          </div>
+	<section id="gallary"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <div class="container">
+            <h1>OUR GALLARY</h1>
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <h3 class="text-center">Donuts</h3>
+                        </div>
+                        <img src="img/o1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <h3 class="text-center">Ice Cream</h3>
+                        </div>
+                        <img src="img/o2.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <h3 class="text-center">Cup Cake</h3>
+                        </div>
+                        <img src="img/o3.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row" style="margin-top: 30px;"    data-aos="fade-up"
+            data-aos-duration="1500">
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <h3 class="text-center">Delicious Cake</h3>
+                        </div>
+                        <img src="img/o4.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <h3 class="text-center">Chocolate Cake</h3>
+                        </div>
+                        <img src="img/o5.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <h3 class="text-center">Slice Cake</h3>
+                        </div>
+                        <img src="img/o6.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+	  <footer class="bg-dark">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<h4>@ 2021 Cake Bakery . All Copy Rights Reserved. </h4>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

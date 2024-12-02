@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Bakery</title>
+    <script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="popper.js"></script>
+	<script type="text/javascript" src="bootstrap.js"></script>	
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+<style>
+	#contact{
+    margin-top: 100px;
+}
+#contact h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: rgba(161,109,14,1);
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid rgba(161,109,14,1);
+}
+#contact input{
+    background-color: rgba(161,109,14,1);
+}
+#contact input::placeholder{
+    color: white;
+}
+#contact textarea{
+    background-color: rgba(161,109,14,1);
+}
+#contact textarea::placeholder{
+    color: white;
+}
+#messagebtn{
+    text-align: center;
+	
+}
+#footer{
+    width: 100%;    
+    background-color: #573818;
+    box-shadow: 0px 0px 5px black;
+    margin-top: 100px;
+}
+#footer h1{
+    color: white;
+    padding-top: 30px;
+}
+#footer p{
+    color: white;
+}
+.icons i{
+    background-color: white;
+    color: #573818;
+    border-radius: 50px;
+    padding: 6px;
+    font-size: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.icons i:hover{
+    background-color: rgba(161,109,14,1);
+    color: white;
+}
+.copyright{
+    color: white;
+    margin-top: 20px;
+}
+.credite{
+    color: white;
+}
+#messagebtn button{
+    width: 200px;
+    height: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    background-color: rgba(161,109,14,1);
+    border: 2px solid white;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#messagebtn button:hover{
+    background-color:rgb(71, 48, 6);
+}
+
+</style>
+</head>
+<body>
+    <header>
+		<div class="container">
+			<div class="row">
+				<div class="col-5 col-sm-5 col-md-6 col-lg-6 col-xl-6">
+					<img src="img/cake-removebg-preview.png" class="img-fluid mx-auto" height="70" width="170">
+				</div>
+
+				<div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6">
+					<form class="form-inline" style="margin-top: 70px; margin-left: 60px;">
+						<div class="input-group">
+							<input class="form-control mr-sm-2" type="text" placeholder="Search....">
+							<button class="btn btn-success" type="submit">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+		<div class="container-fluid">
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+	    		<span class="navbar-toggler-icon"></span>
+	  		</button>
+	  		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item"><a class="nav-link"  href="index.html" style="width: 130px; text-align: center;">HOME</a></li>
+					<li class="nav-item"><a class="nav-link"  href="birthday.html" style="width: 160px; text-align: center;">BIRTHDAY</a></li>
+					<li class="nav-item"><a class="nav-link"  href="cake.html" style="width: 160px; text-align: center;">CAKES</a></li>
+					<li class="nav-item"><a class="nav-link"  href="chocalate.html" style="width: 130px; text-align: center;">CHOCALATE</a></li>
+                    <li class="nav-item"><a class="nav-link"  href="gallery.html" style="width: 110px; text-align: center;">GALLARY</a></li>
+					
+                    <li class="nav-item active" style="border-bottom: 3px solid #77b300; font-size: 17px;"><a class="nav-link"  href="cantact.html" style="width: 110px; text-align: center;">CONTACT</a></li>
+				</ul>
+			</div>	
+		</div>
+	</nav>
+	<div class="container" id="contact"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <h1>CONTACT US</h1>
+        <div class="row">
+            <div class="col-md-4 py-1 py-md-0">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="usr" placeholder="Name">
+                </div>
+            </div>
+            <div class="col-md-4 py-1 py-md-0">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="eml" placeholder="Email">
+                </div>
+            </div>
+            <div class="col-md-4 py-1 py-md-0">
+                <div class="form-group">
+                    <input type="number" class="form-control" id="phn" placeholder="Phone">
+                </div>
+            </div>
+            
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+        </div>
+        <div id="messagebtn"><button>Send Message</button></div>
+      </div>
+      <!-- footer -->
+      <footer id="footer"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <h1 class="text-center">Cake Bakery</h1>
+        <p class="text-center">Most Trusted Cake Bakery</p>
+        <div class="icons text-center">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-skype"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="copyright text-center">
+            &copy; Copyright <strong>Cake Bakery</strong> .All Rights Reserved
+        </div>
+        <div class="credite text-center">
+           
+        </div>
+      </footer>
+</body>
+</html>
